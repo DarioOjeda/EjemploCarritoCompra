@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+Wrap the DrawerLayout with FrameLayout to use the same View type for the same view ID
+across the layout configurations
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_vertical|center_horizontal"
+    android:id="@+id/activity_main"
+    android:orientation="vertical">
+
+
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_vertical|center_horizontal"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selecciona los artículos que desee agregar al carrito:"
+                android:layout_gravity="center">
+
+            </TextView>
+            <ListView
+                android:id="@+id/list_articulos"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="2dp" >
+            </ListView>
+
+        </LinearLayout>
+
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/ic_shopping_cart_black_24dp"
+            android:textColor="#000000"
+            android:id="@+id/boton_carrito"
+            android:paddingTop="12sp"
+            android:drawablePadding="-15sp"
+            android:layout_gravity="bottom|right"
+            android:text=""></Button>
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

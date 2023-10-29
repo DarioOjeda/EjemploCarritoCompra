@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:textColor="#FFFFFF" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="4dp"
+        android:layout_weight="0"
+        android:gravity="center|center_vertical"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imagen_articulo"
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/tv_nombre_precio"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:gravity="center|center_vertical"
+            android:text=""
+            android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/boton_anadir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_plus"
+            android:text="Añadir">
+
+        </Button>
+
+    </LinearLayout>
+
+</LinearLayout>
